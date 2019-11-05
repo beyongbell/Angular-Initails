@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 // Import Component
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -18,7 +17,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ServicesComponent,
     BlogComponent,
     PageNotFoundComponent
   ],
