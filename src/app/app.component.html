@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="">
+  <a class="navbar-brand" href="" [ngClass]="{'one': true}" [ngStyle]="{color: 'white'}">
     <i class="fab fa-angular"></i> Tinnakorn Choompee </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" (click)="setTitle( 'Home' )" routerLink="/" routerLinkActive="active" > Home </a>
+          <a class="nav-link" (click)="setTitle( 'Home' )" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" > Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="setTitle( 'About' )" routerLink="/about" routerLinkActive="active">About</a>

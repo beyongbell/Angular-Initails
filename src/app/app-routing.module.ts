@@ -8,11 +8,12 @@ import { BlogComponent } from './blog/blog.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '',         component: HomeComponent},
-  { path: 'about',    component: AboutComponent    },
-  { path: 'services', component: ServicesComponent },
-  { path: 'blog',     component: BlogComponent     },
-  { path: '**',       component: PageNotFoundComponent }
+  { path: 'index',    redirectTo: '', pathMatch: 'full' },
+  { path: '',          component: HomeComponent},
+  { path: 'about',     component: AboutComponent    },
+  { path: 'services',  component: ServicesComponent },
+  { path: 'blog',      component: BlogComponent     },
+  { path: '**',        component: PageNotFoundComponent }
 ];
 
 @NgModule({
