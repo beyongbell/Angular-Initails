@@ -12,13 +12,17 @@ import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
+// Directive
+import { HighlightDirective } from './shared/components/highlight.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     BlogComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
