@@ -1,8 +1,10 @@
+$main-top  : 5rem;
+$font-size : 22px;
+
 *[role="main"] {
-  padding-top: 5rem;
+  padding-top: $main-top;
 }
 
 .one {
-  font-size: 22px;
+  font-size: $font-size;
 }
-
